@@ -33,9 +33,6 @@ const listSchema = new mongoose.Schema({
 const List = new mongoose.model("List",listSchema);
 const defaultArray = [work1,work2,work3];
 
-
-
-//-----------------------------------------------------------------------------------------------------------
 const date = require(__dirname + "/myModule.js");
 const day = date.getDate();
 /*SMALL EXPLANATION ABOUT HOW WE CONTROLLED ADDING SAME DATA AGAIN AND AGAIN TO OUR DATABASE BY USING IF-ELSE AND NOT BY ANY PREDEFINED METHOD
@@ -120,9 +117,6 @@ app.post("/",function(req,res){
         });
         
     }
-    
-    
-    
     /*if(req.body.List=== "Work"){    //Checking where req has taken place
         var item=req.body.item;
         workItems.push(item);
@@ -160,11 +154,6 @@ app.get("/:customList",function(req,res){
     });
     
 });
-
-
-
-
-
 
 /*let port = process.env.PORT;
 if(port===null || port===""){
